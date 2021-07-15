@@ -14,9 +14,9 @@ function main(){
     
     let slider = document.getElementById('myRange')
     let sizeValue = document.getElementById('sizeValue')
-    slider.oninput = function(){
+    slider.addEventListener('input', function(){
         sizeValue.innerText = slider.value
-    }
+    });
 
     resetButton.addEventListener('click', ()=>{
         resetGrid(boxes)
@@ -25,7 +25,7 @@ function main(){
     changeSizeButton.addEventListener('click', ()=> {
         let size = sizeValue.innerText
         slider.oninput = function(){
-            output.innerText = slider.value
+            size.innerText = slider.value
         };
         boxes = newGrid(parseInt(size));
     });
