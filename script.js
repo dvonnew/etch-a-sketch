@@ -23,7 +23,7 @@ function main(){
     });
 
     changeSizeButton.addEventListener('click', ()=> {
-        let size = output.innerText
+        let size = sizeValue.innerText
         slider.oninput = function(){
             output.innerText = slider.value
         };
