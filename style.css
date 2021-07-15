@@ -1,0 +1,120 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#layout{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(89, 107, 122);
+}
+
+#header{
+    height: 70px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 40px;
+    color:rgb(0, 0, 0);
+    margin: 0;
+}
+
+#changeBar{
+    height: 50px;
+    width: 60%;
+    max-width: 550px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button{
+    padding: 8px 11px;
+    border-radius: 5px;
+    background-color: rgb(247, 242, 242);
+    border: none;
+}
+
+button:hover{
+    border-style: solid;
+    border-color:rgb(0, 0, 0);
+    border-width: 1px;
+}
+
+#container {
+    height: 70%;
+    width: 60%;
+    max-width: 550px;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows),1fr);
+    grid-template-columns: repeat(var(--grid-cols),1fr);
+    background-color: white;
+    border-color: black;
+    border-width: 5px;
+    border: black;
+    border-style: solid;
+}
+
+.slidecontainer{
+    height: 25px;
+    margin: 5px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+#output{
+    color: white;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 60%;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    background: black;
+    border-radius: 50%;
+
+}
+
+.slider::-ms-fill-lower{
+    background-color: rgb(54, 54, 54);
+}
+
+#gridChange{
+    height: 50px;
+    width: 150px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='style.css'>
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <div id='layout'>
+        <div id='header'>
+            <h1>Etch-a-Sketch</h1>
+        </div>
+        <div id='changeBar'>
+            <button class='colorChange' id='black' type='button'>Black</button>
+            <button class='colorChange' id='grey' type='button'>Grey</button>
+            <button class='colorChange' id='blue' type='button'>Blue</button>
+            <button class='colorChange' id='green' type='button'>Green</button>
+            <button class='colorChange' id='random' type='button'>Random</button>
+        </div>
+        <div id='container'></div>
+        <div class="slidecontainer">
+            <input type="range" min="16" max="100" value="16" class="slider" id="myRange">
+            <p id='sizeValue'></p>
+        </div>
+        <div id='gridChange'>
+            <button id='reset' type='button'>Reset</button>
+            <button id='new' type='button'>New</button>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
